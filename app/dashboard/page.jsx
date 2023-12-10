@@ -1,7 +1,7 @@
 export default function Dash() {
     return (
         <>
-        <h1>Dashboard</h1>
+        <div className="radial-progress" style={{ "--value": "100", "--size": "12rem", "--thickness": "2rem" }} role="progressbar">60%</div>
         </>
     )
 }
