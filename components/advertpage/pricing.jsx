@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function pricing() {
     return (
         <section id="pricing">
@@ -25,7 +27,7 @@ export default function pricing() {
                   <path d="M20 6L9 17l-5-5"></path>
                 </svg>
               </span>
-              <strong>2 demo templates.</strong>
+              <strong>36 Hours of Full Access</strong>
             </li>
             <li className="flex items-center mb-2 text-base font-medium tracking-tight text-neutral-600">
               <span className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-neutral-600">
@@ -33,37 +35,36 @@ export default function pricing() {
                   <path d="M20 6L9 17l-5-5"></path>
                 </svg>
               </span>
-              <strong>Fully responsive.</strong>
+              <strong>Chatbot</strong>
             </li>
-            <li className="flex items-center mb-2 text-base font-medium tracking-tight text-neutral-600 text-opacity-70">
-              <span className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-neutral-600 text-opacity-70">
+            <li className="flex items-center mb-2 text-base font-medium tracking-tight text-neutral-600">
+              <span className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-neutral-600">
                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3" viewBox="0 0 24 24">
-                  <line x1="18" y1="6" x2="6" y2="18"></line>
-                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                  <path d="M20 6L9 17l-5-5"></path>
                 </svg>
               </span>
-              Figma.
+              <strong>Summary</strong>
             </li>
-            <li className="flex items-center mb-2 text-base font-medium tracking-tight text-neutral-600 text-opacity-70">
-              <span className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-neutral-600 text-opacity-70">
+            <li className="flex items-center mb-2 text-base font-medium tracking-tight text-neutral-600">
+              <span className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-neutral-600">
                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3" viewBox="0 0 24 24">
-                  <line x1="18" y1="6" x2="6" y2="18"></line>
-                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                  <path d="M20 6L9 17l-5-5"></path>
                 </svg>
               </span>
-              Lifetime Support.
+              <strong>Sentiment Analysis</strong>
             </li>
-            <li className="flex items-center mb-2 text-base font-medium tracking-tight text-neutral-600 text-opacity-70">
-              <span className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-neutral-600 text-opacity-70">
+            <li className="flex items-center mb-2 text-base font-medium tracking-tight text-neutral-600">
+              <span className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-neutral-600">
                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" className="w-3 h-3" viewBox="0 0 24 24">
-                  <line x1="18" y1="6" x2="6" y2="18"></line>
-                  <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg> </span>Free Updates
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </span>
+              <strong>Audio to Text</strong>
             </li>
           </ul>
 
           <div className="mt-8">
-            <button className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white"><a href="/dashboard">Book a Demo</a></button>
+            <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><button className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white">Book a Demo</button></Link>
           </div>
         </div>
       </div>
@@ -84,7 +85,7 @@ export default function pricing() {
                   <path d="M20 6L9 17l-5-5"></path>
                 </svg>
               </span>
-              <strong>All templates.</strong>
+              <strong>Audio to Text</strong>
             </li>
             <li className="flex items-center mb-2 text-base font-medium tracking-tight text-white">
               <span className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-white">
@@ -92,7 +93,7 @@ export default function pricing() {
                   <path d="M20 6L9 17l-5-5"></path>
                 </svg>
               </span>
-              <strong>Figma files.</strong>
+              <strong>Chatbot</strong>
             </li>
             <li className="flex items-center mb-2 text-base font-medium tracking-tight text-white">
               <span className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-white">
@@ -100,7 +101,7 @@ export default function pricing() {
                   <path d="M20 6L9 17l-5-5"></path>
                 </svg>
               </span>
-              <strong>Free Updates.</strong>
+              <strong>Summary</strong>
             </li>
             <li className="flex items-center mb-2 text-base font-medium tracking-tight text-white">
               <span className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-white">
@@ -108,7 +109,7 @@ export default function pricing() {
                   <path d="M20 6L9 17l-5-5"></path>
                 </svg>
               </span>
-              <strong>Fully Responsive</strong>
+              <strong>Sentiment Analysis</strong>
             </li>
             <li className="flex items-center mb-2 text-base font-medium tracking-tight text-white">
               <span className="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-white">
@@ -116,12 +117,12 @@ export default function pricing() {
                   <path d="M20 6L9 17l-5-5"></path>
                 </svg>
               </span>
-              <strong>Lifetime Support</strong>
+              <strong>Secure Cloud Storage</strong>
             </li>
           </ul>
 
           <div className="mt-8">
-            <button className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white"><a href="/dashboard">Create Account</a></button>
+          <Link href="/dashboard"><button className="w-full items-center block px-10 py-3.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 bg-white">Create Account</button></Link>
           </div>
         </div>
       </div>

@@ -10,8 +10,8 @@ export default function review() {
 
             <p className="mx-auto text-base leading-relaxed text-gray-500">CarsAI excels at converting speech to text, summarizing content, and crafting interactive chatbots. Elevate communication effortlessly with our innovative technology. Drive the future with CarsAI!</p>
             <h2 className="mt-4 text-xs font-semibold tracking-widest text-blue-500 uppercase">
-        commercialAI
-        <span href="#" className="lg:mb-0 font-semibold text-gray-200">owner</span>
+        commercial AI
+        <span href="#" className="lg:mb-0 font-semibold text-gray-200"> owner</span>
             </h2>
         </div>
     </div>

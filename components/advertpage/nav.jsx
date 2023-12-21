@@ -13,7 +13,7 @@ export default function navbar() {
     </ul>
   </div>
   <div className="navbar-end">
-    <button className="btn"><Link href="/dashboard">Dashboard</Link></button>
+  <Link href="/dashboard"><button className="btn">Dashboard</button></Link>
   </div>
 </div>
     )
