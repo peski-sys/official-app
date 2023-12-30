@@ -12,10 +12,12 @@ icons: {
 export default function Dashlayout({ children }) {
 return (
     <>
-        <div className='flex h-screen'>
+    <div className='fixed bottom-0'>
         <Sidebar />
+    </div>
+    <div className='flex h-screen ml-64'>
         {children}
-        </div>
+    </div>
     </>
 )
 }
