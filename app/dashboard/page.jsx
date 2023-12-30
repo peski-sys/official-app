@@ -1,4 +1,8 @@
-export default function Dash() {
+import { currentUser} from "@clerk/nextjs";
+
+export default async function Dash() {
+
+    const user = await currentUser()
 
     return (
         <>
@@ -10,7 +14,7 @@ export default function Dash() {
                 </div>
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
                     <div className="py-4">
-                        <div className="rounded-lg bg-neutral-50 h-96"></div>
+                        <div className="rounded-lg bg-neutral-50 h-96">{user.id}</div>
                     </div>
                 </div>
             </div>

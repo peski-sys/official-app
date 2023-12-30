@@ -14,7 +14,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
       <link rel="icon" href="/images/dashicon.ico" sizes="any" />
-      <link rel="stylesheet" href="globals.css" />
       </head>
       <ClerkProvider>
       <body className={pop.className}>

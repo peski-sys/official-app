@@ -60,9 +60,10 @@ export default async function sidebar() {
                         <p className="px-4 pt-4 font-medium uppercase text-neutral-200 ">Recent Five</p>
                         <ul>
                             {nums.map(item => {
+                                let path = `/dashboard/audio/${item}`
                                 return (
                                     <li key={item}>
-                                    <Link className="inline-flex items-center w-full px-4 py-2 mt-1 text-base transition duration-500 ease-in-out transform border rounded-lg text-neutral-200 border-neutral-800 hover:border-neutral-800 focus:shadow-outline hover:bg-neutral-900" white="" href="#">
+                                    <Link className="inline-flex items-center w-full px-4 py-2 mt-1 text-base transition duration-500 ease-in-out transform border rounded-lg text-neutral-200 border-neutral-800 hover:border-neutral-800 focus:shadow-outline hover:bg-neutral-900" white="" href={path}>
                                         <svg data-slot="icon" className="w-4 h-4" fill="none" strokeWidth="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z"></path>
                                         </svg>
