@@ -1,5 +1,4 @@
 import Image from "next/image"
-import ftc from "@/public/featureCard.png"
 import trans from "@/public/icons/transcript.png"
 import chat from "@/public/icons/chatbot.png"
 import senti from "@/public/icons/sentiment.png"
