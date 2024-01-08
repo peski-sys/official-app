@@ -1,11 +1,13 @@
 "use client"
 import { usePathname } from "next/navigation";
 import { CardHeader, CardContent, Card } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
+import { useState } from "react";
 
 
 export default function audios() {
 
+    const [givenValue, changeValue] = useState("");
+    const [messages, setMessages] = useState([]);
     const returnPath = () => {
         const router = usePathname();
         const pathParts = router.split('/');
@@ -14,16 +16,12 @@ export default function audios() {
         return lastPart
     }
 
-    // const btnPress = () => {
-    //     let prom = document.getElementById("queryForChatbot").value;
-    //     if(prom != "" ) {
-    //         return (
-    //             <div className="chat chat-start">
-    //             <div className="chat-bubble">{prom}</div>
-    //             </div>
-    //         )
-    //     }
-    // }
+    const entered  = (e) => {
+        e.preventDefault();
+        setMessages([...messages, givenValue]);
+        console.log(messages);
+        changeValue("");
+    }
 
     return (
     <>
@@ -81,26 +79,25 @@ export default function audios() {
         </div>
         <div className="h-72 w-full border rounded-md overflow-auto mb-4">
             <div className="p-4 text-sm leading-7">
-            <div className="chat chat-start">
-                <div className="chat-bubble">It's over Anakin, <br/>I have the high ground.</div>
-            </div>
-            <div className="chat chat-end">
-            <div className="chat-bubble">You underestimate my power!</div>
-            </div>
-            </div>
-            <div className="chat chat-end">
-            <div className="chat-bubble">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit nemo at itaque. Natus, soluta. Accusamus odio voluptatem, impedit assumenda minima, obcaecati doloribus optio perferendis officia voluptatum illo? Quibusdam, pariatur.</div>
-            </div>
-            <div className="chat chat-start">
-                <div className="chat-bubble">It's over Anakin, <br/>I have the high ground.</div>
-            </div>
-            <div className="chat chat-start">
-                <div className="chat-bubble">It's over Anakin, <br/>I have the high ground.</div>
+
+            {messages.map((message, index) => {
+                return (
+                    <>
+                    <div className="chat chat-end" key={index}>
+                    <div className="chat-bubble chat-bubble-info">{message}</div>
+                    </div>
+
+                    <div className="chat chat-start">
+                    <div className="chat-bubble">Manual Response : Will Change it with bot response after.</div>
+                    </div>
+                    </>
+                )
+            })}
             </div>
         </div>
         <div className="flex w-full items-center space-x-2">
-            <Input className="flex-grow pt-1" placeholder="Type your message..." type="text" id="queryForChatbot"/>
-            <button type="submit" value="Submit" className="btn bg-blue-700 text-white hover:bg-blue-600">Submit</button>
+            <input type="text" className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" maxLength="50" id="queryForChatbot" placeholder="Message.." value={givenValue} onChange={(e) => changeValue(e.target.value)}/>
+            <button type="submit" value="Submit" className="btn bg-blue-700 text-white hover:bg-blue-600" onClick={entered}>Submit</button>
         </div>
         </div>
     </section>
