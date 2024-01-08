@@ -16,12 +16,13 @@ export default function audios() {
         return lastPart
     }
 
-    const entered  = (e) => {
-        e.preventDefault();
+    const entered  = () => {
+        if(givenValue != "") {
         setMessages([...messages, givenValue]);
-        console.log(messages);
         changeValue("");
+        }
     }
+
 
     return (
     <>
@@ -32,12 +33,11 @@ export default function audios() {
         <h1 className="text-3xl font-bold">Title : {returnPath()}</h1>
         <p className="mt-2 text-gray-600">Description</p>
         </div>
-        <audio className="mb-4 mr-14" controls controlsList="noplaybackrate">
-        <source src="/audio-file.mp3" type="audio/mpeg"/>
+        <audio className="mb-4 mr-14" controls controlsList="noplaybackrate" src="/audio/example.mp3">
         </audio>
     </header>
+        
     
-
     <section className="grid lg:grid-cols-3 gap-6">
 
         <div className="bg-white rounded-lg p-4 shadow lg:col-span-2">

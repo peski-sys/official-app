@@ -5,7 +5,7 @@ export default function status() {
         <main className="relative flex-1 overflow-y-auto focus:outline-none">
             <div className="py-6">
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
-                    <h1 className="text-xl font-bold text-neutral-600 mb-5">Status</h1>
+                    <h1 className="text-xl font-bold text-neutral-600 mb-5">All Records</h1>
                 </div>
                 <div className="overflow-x-auto">
 <table className="table table-xs">
