@@ -25,6 +25,7 @@ export default async function sidebar() {
                 </div>
                 <div className="flex flex-col flex-grow px-4 mt-5 ">
                     <nav className="flex-1 space-y-1 bg-neutral-800">
+                        <menu>
                         <ul>
                             <li>
                                 <Link className="inline-flex items-center w-full px-4 py-2 mt-1 text-base transition duration-500 ease-in-out transform border rounded-lg text-neutral-200 border-neutral-800 hover:border-neutral-800 focus:shadow-outline hover:bg-neutral-900" white="" href="/dashboard">
@@ -73,6 +74,7 @@ export default async function sidebar() {
                                 )
                             })}
                         </ul>
+                        </menu>
                     </nav>
                 </div>
                 <div className="flex flex-shrink-0 p-4 px-4 bg-neutral-900">
