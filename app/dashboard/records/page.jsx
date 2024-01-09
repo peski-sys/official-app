@@ -14,7 +14,7 @@ export default function status() {
         <th></th> 
         <th>Audio Title</th> 
         <th>Note</th> 
-        <th>Added By</th> 
+        <th>Audio File Name</th> 
         <th>Audio Length</th> 
         <th>Added Date</th> 
         <th>Status</th>

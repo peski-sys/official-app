@@ -27,7 +27,7 @@ export default function upload() {
 
     return (
         <>
-<div className="flex items-start justify-center p-10 ml-11">
+<div className="flex items-center justify-center p-10 ml-11">
 <div className="mx-auto w-full max-w-[550px] bg-white">
     <form className="" method="POST" accept=".amr,.flac,.m4a,.mp3,.mp4,.ogg,.webm,.wav">
     <div className="mb-1">
@@ -88,14 +88,13 @@ export default function upload() {
 </div>
 
 <div className="flex items-start p-5 mt-24">
-        <div className="border-right border-[#e0e0e0] h-full mr-4"></div>
         <div className="flex-grow">
-        <label className="mb-3 block text-base font-bold text-[#07074D]">*Uploaded By : </label>
-        <input type="text" name="uploadingPerson" id="uploadingPerson" placeholder="Your Name" className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md mb-5"/>
+        <label className="mb-3 block text-base font-bold text-[#07074D]">*Original File Name : </label>
+        <input type="text" name="uploadingPerson" id="uploadingPerson" placeholder="Fills Automatically" value={fileName} disabled className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md mb-5"/>
     <label className="block text-base font-bold text-[#07074D]">Note (Optional)</label>
     <textarea name="description" placeholder="Enter description" className="w-full h-32 rounded-md border border-[#e0e0e0] bg-white px-3 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md mt-3 resize"></textarea>
 </div>
-    </div>
+    </div> 
 
         </>
     )
