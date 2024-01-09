@@ -31,12 +31,12 @@ export default function upload() {
 <div className="mx-auto w-full max-w-[550px] bg-white">
     <form className="" method="POST" accept=".amr,.flac,.m4a,.mp3,.mp4,.ogg,.webm,.wav">
     <div className="mb-1">
-        <label className="mb-3 mt-3 block text-base font-bold text-[#07074D]">Uploaded By : </label>
-        <input type="text" name="uploadingPerson" id="uploadingPerson" placeholder="Your Name" className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"/>
+        <label className="mb-3 mt-3 block font-bold text-[#07074D] text-xl">*Title : </label>
+        <input type="text" name="uploadingPerson" id="uploadingPerson" placeholder="File Title" className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"/>
     </div>
 
     <div className="mb-2">
-        <label className="mb-2 mt-4 block text-lg font-semibold text-[#07074D]">Upload File</label>
+        <label className="mb-2 mt-4 block text-lg font-semibold text-[#07074D]">*Upload File</label>
 
         <div className="mb-2">
         <input type="file" name="file" onChange={handleFileChange} id="file" className="sr-only" accept=".amr,.flac,.m4a,.mp3,.mp4,.ogg,.webm,.wav"/>
@@ -78,7 +78,7 @@ export default function upload() {
 
       <div>
         <button
-          className="hover:shadow-form w-full rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none"
+          className="hover:shadow-form w-full rounded-md bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 font-bold  py-3 px-8 text-center text-base text-white outline-none"
         >
           Make Report
         </button>
@@ -90,8 +90,8 @@ export default function upload() {
 <div className="flex items-start p-5 mt-24">
         <div className="border-right border-[#e0e0e0] h-full mr-4"></div>
         <div className="flex-grow">
-        <label className="mb-3 block text-base font-bold text-[#07074D]">Title</label>
-        <input type="text" name="uploadingPerson" id="uploadingPerson" placeholder="Title" className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md mb-5"/>
+        <label className="mb-3 block text-base font-bold text-[#07074D]">*Uploaded By : </label>
+        <input type="text" name="uploadingPerson" id="uploadingPerson" placeholder="Your Name" className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md mb-5"/>
     <label className="block text-base font-bold text-[#07074D]">Note (Optional)</label>
     <textarea name="description" placeholder="Enter description" className="w-full h-32 rounded-md border border-[#e0e0e0] bg-white px-3 py-3 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md mt-3 resize"></textarea>
 </div>
