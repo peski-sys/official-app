@@ -18,7 +18,7 @@ export default function FourCards() {
       <span className=" font-bold text-5xl">12</span>
     </figure>
     <div className="card-body items-center text-center">
-      <h2 className="card-title">Average <br />Time (mins)</h2>
+      <h2 className="card-title">Average Call <br />Time (mins)</h2>
     </div>
   </div>
   

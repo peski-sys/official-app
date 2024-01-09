@@ -29,7 +29,7 @@ import { BarChart, Card, Title } from "@tremor/react";
     },
     {
         name: "July",
-        "No. of Calls": 98,
+        "No. of Calls": 2521,
       },
       {
         name: "Aug",
@@ -41,7 +41,7 @@ import { BarChart, Card, Title } from "@tremor/react";
       },
       {
         name: "Oct",
-        "No. of Calls": 98,
+        "No. of Calls": 988,
       },
       {
         name: "Nov",
@@ -57,17 +57,16 @@ const valueFormatter = (number) => new Intl.NumberFormat("us").format(number).to
 
 export default function BarrChart() { 
     return(
-  <Card className=" rounded-xl">
+<Card className=" rounded-xl">
     <Title>Volume of Calls Each Month</Title>
     <BarChart
-      className="mt-6 "
-      data={chartdata}
-      index="name"
-      categories={["No. of Calls"]}
-      colors={["blue"]}
-      valueFormatter={valueFormatter}
-      yAxisWidth={48}
+    className="mt-6"
+    data={chartdata}
+    index="name"
+    categories={["No. of Calls"]}
+    valueFormatter={valueFormatter}
+    yAxisWidth={48}
     />
-  </Card>
+</Card>
 )
 }

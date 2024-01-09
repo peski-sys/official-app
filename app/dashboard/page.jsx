@@ -3,6 +3,7 @@ import CardsBottom from "@/components/dashpage/bottomcards";
 import CarouselTwo from "@/components/dashpage/twocarousel";
 import VolBar from "@/components/dashpage/volchart";
 import StatusComp from "@/components/dashpage/statdash";
+import TopTopics from "@/components/dashpage/toptopics";
 
 
 export default async function Dash() {
@@ -26,16 +27,20 @@ export default async function Dash() {
     <CarouselTwo /> 
     <CardsBottom />
 
-    <div className="flex justify-center items-center gap-5 col-span-2 shadow-xl ml-2">
+<div className="flex justify-center items-center gap-5 col-span-2 shadow-xl ml-2 mb-2">
 <VolBar />
 </div>
-<div className="flex justify-center items-center gap-5 col-span-2 shadow-xl mr-2">
+<div className="flex justify-center items-center gap-5 col-span-2 shadow-xl mr-2 mb-2">
 <StatusComp />
+</div>
+
+<div className="flex justify-center items-center col-span-4 shadow-xl mr-10 ml-10 gap-5">
+<TopTopics />
 </div>
 
 </div>
   {/* End -----> */}
-
+        
     </main>
     </div>
         </>

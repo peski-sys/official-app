@@ -5,7 +5,7 @@ export default function DashStat() {
     return (
         <>
         <Card className="rounded-xl">
-            <Title>Status (Recent 10)</Title>
+            <Title className=" mb-6">Status (Recent 10)</Title>
             <div className="overflow-x-auto max-h-80">
   <table className="table table-zebra">
     {/* head */}
