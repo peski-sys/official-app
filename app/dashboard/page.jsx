@@ -23,12 +23,12 @@ export default async function Dash() {
             {/* Heading End */}
 
   {/* Cards ----> */}
-<div className="justify-center items-center grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 ">
+<div className="justify-center items-center grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 rounded-xl">
     <CarouselTwo /> 
     <CardsBottom />
 </div>
 
-<div className="flex justify-center items-center gap-5 col-span-4 shadow-xl ml-2 mb-2 mr-2 mt-4">
+<div className="flex justify-center items-center gap-5 col-span-4 shadow-xl ml-2 mb-2 mr-2 mt-4 rounded-xl">
 <VolBar />
 <StatusComp />
 </div>
