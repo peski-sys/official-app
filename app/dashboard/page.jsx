@@ -1,6 +1,8 @@
 import { currentUser} from "@clerk/nextjs";
 import CardsBottom from "@/components/dashpage/bottomcards";
 import CarouselTwo from "@/components/dashpage/twocarousel";
+import VolBar from "@/components/dashpage/volchart";
+import StatusComp from "@/components/dashpage/statdash";
 
 
 export default async function Dash() {
@@ -20,9 +22,17 @@ export default async function Dash() {
             {/* Heading End */}
 
   {/* Cards ----> */}
-<div className="justify-center items-center grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5">
+<div className="justify-center items-center grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 ">
     <CarouselTwo /> 
     <CardsBottom />
+
+    <div className="flex justify-center items-center gap-5 col-span-2 shadow-xl ml-2">
+<VolBar />
+</div>
+<div className="flex justify-center items-center gap-5 col-span-2 shadow-xl mr-2">
+<StatusComp />
+</div>
+
 </div>
   {/* End -----> */}
 
