@@ -9,7 +9,7 @@ export default function TwoCarousel() {
         <div id="slide1" className="carousel-item relative w-full mt-5 mb-5">
           <ArrClientCaller />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#" className="btn btn-circle">❮</a> 
+            <a href="#slide2" className="btn btn-circle">❮</a> 
             <a href="#slide2" className="btn btn-circle">❯</a>
           </div>
         </div> 
@@ -18,7 +18,7 @@ export default function TwoCarousel() {
           <ArrSentiment />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" className="btn btn-circle">❮</a> 
-            <a href="#" className="btn btn-circle">❯</a>
+            <a href="#slide1" className="btn btn-circle">❯</a>
           </div>
         </div> 
       </div>
