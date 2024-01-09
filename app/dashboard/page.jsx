@@ -20,10 +20,10 @@ export default async function Dash() {
             {/* Heading End */}
 
   {/* Cards ----> */}
-  <div className="justify-center items-center grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5">
-      <CarouselTwo /> 
-      <CardsBottom />
-  </div>
+<div className="justify-center items-center grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5">
+    <CarouselTwo /> 
+    <CardsBottom />
+</div>
   {/* End -----> */}
 
     </main>
