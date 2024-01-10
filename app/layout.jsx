@@ -1,5 +1,5 @@
 import { Poppins } from 'next/font/google'
-import '@/app/globals.css'
+import './globals.css'
 import { ClerkProvider } from "@clerk/nextjs";
 
 const pop = Poppins({ weight: '500',subsets: ['latin'] })

@@ -1,4 +1,4 @@
-import { currentUser} from "@clerk/nextjs";
+"use client"
 import CardsBottom from "@/app/(components)/dashpage/bottomcards";
 import CarouselTwo from "@/app/(components)/dashpage/twocarousel";
 import VolBar from "@/app/(components)/dashpage/volchart";
@@ -6,10 +6,7 @@ import StatusComp from "@/app/(components)/dashpage/statdash";
 import TopTopics from "@/app/(components)/dashpage/toptopics";
 
 
-export default async function Dash() {
-
-    const user = await currentUser()
-
+export default function Dash() {
     return (
         <>
         <div className="flex flex-col h-screen flex-1">
