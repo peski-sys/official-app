@@ -61,6 +61,7 @@ export default function BarrChart() {
     <Title>Volume of Calls Each Month</Title>
     <BarChart
     className="mt-6"
+    showAnimation="true"
     data={chartdata}
     index="name"
     categories={["No. of Calls"]}

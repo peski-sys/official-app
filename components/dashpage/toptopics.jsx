@@ -36,7 +36,7 @@ export default function topics(){
         <Bold>Calls</Bold>
       </Text>
     </Flex>
-    <BarList data={data} className="mt-2" />
+    <BarList data={data} className="mt-2" showAnimation="true"/>
   </Card>
   </>
 )
