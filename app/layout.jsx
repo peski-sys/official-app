@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <ClerkProvider>
       <body className={pop.className}>
         {children}</body>
-        </ClerkProvider>
+      </ClerkProvider>
     </html>
   )
 }

@@ -1,6 +1,7 @@
 import '../globals.css'
 import Sidebar from "@/components/dashpage/sidebar"
 
+
 export const metadata = {
 title: 'Dashboard - CarsAI',
 description: 'Upload and Analyze your audio files with AI',
