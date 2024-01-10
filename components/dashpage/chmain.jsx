@@ -41,7 +41,7 @@ export default function Char() {
   <AreaChart
       className="h-72 mt-4"
       data={chartdata}
-      showAnimation="true"
+      showAnimation
       index="date"
       categories={["Client", "Caller"]}
       colors={["blue", "red"]}

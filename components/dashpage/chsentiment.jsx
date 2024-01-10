@@ -36,7 +36,7 @@ export default function CharSentiment() {
   <AreaChart
       className="h-72 mt-4"
       data={chartdata}
-      showAnimation="true"
+      showAnimation
       index="date"
       categories={["Score"]}
       colors={["red"]}
