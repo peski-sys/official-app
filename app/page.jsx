@@ -1,9 +1,9 @@
-import Foot from '@/components/advertpage/footer'
-import Nav from '@/components/advertpage/nav'
-import HeroALT from '@/components/advertpage/heroalt'
-import Pricing from '@/components/advertpage/pricing'
-import Review from '@/components/advertpage/review'
-import Features from '@/components/advertpage/features'
+import Foot from '@/app/(components)/advertpage/footer'
+import Nav from '@/app/(components)/advertpage/nav'
+import HeroALT from '@/app/(components)/advertpage/heroalt'
+import Pricing from '@/app/(components)/advertpage/pricing'
+import Review from '@/app/(components)/advertpage/review'
+import Features from '@/app/(components)/advertpage/features'
 
 export default function Home() {
   return (

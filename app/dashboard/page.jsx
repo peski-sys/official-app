@@ -1,9 +1,9 @@
 import { currentUser} from "@clerk/nextjs";
-import CardsBottom from "@/components/dashpage/bottomcards";
-import CarouselTwo from "@/components/dashpage/twocarousel";
-import VolBar from "@/components/dashpage/volchart";
-import StatusComp from "@/components/dashpage/statdash";
-import TopTopics from "@/components/dashpage/toptopics";
+import CardsBottom from "@/app/(components)/dashpage/bottomcards";
+import CarouselTwo from "@/app/(components)/dashpage/twocarousel";
+import VolBar from "@/app/(components)/dashpage/volchart";
+import StatusComp from "@/app/(components)/dashpage/statdash";
+import TopTopics from "@/app/(components)/dashpage/toptopics";
 
 
 export default async function Dash() {

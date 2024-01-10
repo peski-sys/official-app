@@ -1,6 +1,6 @@
 "use client"
 import { usePathname } from "next/navigation";
-import { CardHeader, CardContent, Card } from "@/components/ui/card"
+import { CardHeader, CardContent, Card } from "@/app/(components)/ui/card"
 import { useState } from "react";
 
 

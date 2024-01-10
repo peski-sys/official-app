@@ -1,5 +1,5 @@
-import ArrClientCaller from "@/components/dashpage/chmain";
-import ArrSentiment from "@/components/dashpage/chsentiment";
+import ArrClientCaller from "@/app/(components)/dashpage/chmain";
+import ArrSentiment from "@/app/(components)/dashpage/chsentiment";
 
 export default function TwoCarousel() {
     return (
