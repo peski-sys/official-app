@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    height: 100%;
+}
 
 .gradient{
     background-color: #ffffff;
