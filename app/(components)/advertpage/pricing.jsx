@@ -74,7 +74,7 @@ export default function pricing() {
           <span className="flex items-center mb-8 text-base font-medium tracking-tight text-white"> Start Using Instantly </span>
           <div className="flex items-end text-3xl font-black leading-none text-white lg:text-4xl">
             <span>
-              <span>$350</span>
+              <span>$400</span>
               <del className="text-2xl font-normal text-white">$500</del>
             </span>
           </div>

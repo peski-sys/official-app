@@ -1,5 +1,5 @@
 import Image from "next/image"
-import AltImage from "@/public/heroalt.png"
+import altimage from "@/public/heroalt.png"
 import Link from "next/link"
 
 export default function heroalt() {
@@ -27,7 +27,7 @@ export default function heroalt() {
     </div>
     <section id="intro">
       <div className="flex flex-col items-center justify-center pt-24 mx-auto rounded-lg lg:px-10 max-w-7xl">
-        <Image className="object-cover object-center w-full rounded-xl border-2 border-cyan-400 shadow-black" alt="hero" src={AltImage} priority={true} />
+        <Image className="object-cover object-center w-full rounded-xl border border-cyan-300 shadow-2xl" alt="hero" src={altimage} priority={true} />
       </div>
     </section>
   </div>
