@@ -1,5 +1,6 @@
 "use client"
 import { Card, Title } from "@tremor/react";
+import Link from "next/link";
 
 export default function DashStat() {
     return (
@@ -21,66 +22,66 @@ export default function DashStat() {
       {/* row 1 */}
       <tr>
         <th>1</th>
-        <td>Cy Ganderton</td>
+        <td><Link className=" underline" href="/dashboard/audio/1">Recording 1</Link></td>
         <td>Quality Control Specialist</td>
-        <td>Blue</td>
+        <td className=" text-red-500">Failed</td>
       </tr>
       {/* row 2 */}
       <tr>
         <th>2</th>
-        <td>Hart Hagerty</td>
+        <td><Link className=" underline" href="/dashboard/audio/2">Recording 2</Link></td>
         <td>Desktop Support Technician</td>
-        <td>Purple</td>
+        <td className=" text-red-500">Failed</td>
       </tr>
       {/* row 3 */}
       <tr>
         <th>3</th>
-        <td>Brice Swyre</td>
+        <td><Link className=" underline" href="/dashboard/audio/3">Recording 3</Link></td>
         <td>Tax Accountant</td>
-        <td>Red</td>
+        <td className=" text-green-500">Success</td>
       </tr>
       <tr>
         <th>4</th>
-        <td>Brice Swyre</td>
+        <td><Link className=" underline" href="/dashboard/audio/4">Recording 4</Link></td>
         <td>Tax Accountant</td>
-        <td>Red</td>
+        <td className=" text-green-500">Success</td>
       </tr>
       <tr>
         <th>5</th>
-        <td>Brice Swyre</td>
+        <td><Link className=" underline" href="/dashboard/audio/5">Recording 5</Link></td>
         <td>Tax Accountant</td>
-        <td>Red</td>
+        <td className=" text-green-500">Success</td>
       </tr>
       <tr>
         <th>6</th>
-        <td>Brice Swyre</td>
+        <td><Link className=" underline" href="/dashboard/audio/6">Recording 6</Link></td>
         <td>Tax Accountant</td>
-        <td>Red</td>
+        <td className=" text-green-500">Success</td>
       </tr>
       
       <tr>
         <th>7</th>
-        <td>Brice Swyre</td>
+        <td><Link className=" underline" href="/dashboard/audio/7">Recording 7</Link></td>
         <td>Tax Accountant</td>
-        <td>Red</td>
+        <td className=" text-green-500">Success</td>
       </tr>
       <tr>
         <th>8</th>
-        <td>Brice Swyre</td>
+        <td><Link className=" underline" href="/dashboard/audio/8">Recording 8</Link></td>
         <td>Tax Accountant</td>
-        <td>Red</td>
+        <td className=" text-green-500">Success</td>
       </tr>
       <tr>
         <th>9</th>
-        <td>Brice Swyre</td>
+        <td><Link className=" underline" href="/dashboard/audio/9">Recording 9</Link></td>
         <td>Tax Accountant</td>
-        <td>Red</td>
+        <td className=" text-green-500">Success</td>
       </tr>
       <tr>
         <th>10</th>
-        <td>Brice Swyre</td>
+        <td><Link className=" underline" href="/dashboard/audio/10">Recording 10</Link></td>
         <td>Tax Accountant</td>
-        <td>Red</td>
+        <td className=" text-green-500">Success</td>
       </tr>
     </tbody>
   </table>
