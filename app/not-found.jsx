@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function notfound(){
     return (
         <>
-<div class="overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+ <div class="overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min- px-4 pt-4 pb-20 text-center sm:block sm:p-0 ">
         <div class="transition-opacity bg-gray-500 bg-opacity-75" aria-hidden="true"></div>
         <span class="hidden sm:inline-block sm:align-middle sm:" aria-hidden="true">​</span>
@@ -24,7 +24,10 @@ export default function notfound(){
             </div>
         </div>
     </div>
-</div>
+</div> 
+{/* <div className="flex items-center justify-center h-screen text-6xl font-bold">
+<h1>Cars<span className=" bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">AI</span></h1>
+</div> */}
         </>
     )
 }
