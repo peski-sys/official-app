@@ -11,15 +11,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <head>
       <link rel="icon" href="/images/dashicon.ico" sizes="any" />
       </head>
-      <ClerkProvider>
       <body className={pop.className}>
         {children}
         </body>
-      </ClerkProvider>
     </html>
+    </ClerkProvider>
   )
 }
