@@ -7,6 +7,20 @@ import TopTopics from "@/app/(components)/dashpage/toptopics";
 
 
 export default function Dash() {
+
+
+    const mainData = [
+    ]
+
+    for(let i=0; i<100; i++) {
+        let randcaller = Math.floor(Math.random() * 100) + 1;
+        let randclient = Math.floor(Math.random() * 100) + 1;
+        let randscore = Math.random().toFixed(2);
+
+        mainData.push( {recD: `Rec ${i+1}`, callerD: randcaller, clientD: randclient, scoreD: randscore} );
+    }
+
+
     return (
         <>
         <div className="flex flex-col h-screen flex-1">
@@ -21,8 +35,8 @@ export default function Dash() {
 
   {/* Cards ----> */}
 <div className="justify-center items-center grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 rounded-xl">
-    <CarouselTwo /> 
-    <CardsBottom />
+    <CarouselTwo toInsert={mainData} /> 
+    <CardsBottom writeMains={mainData}/>
 </div>
 
 <div className="flex justify-center items-center gap-5 col-span-4 shadow-xl ml-2 mb-2 mr-2 mt-4 rounded-xl">

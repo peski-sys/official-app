@@ -4,7 +4,7 @@ import firstLogo from "@/public/icons/navicon.png"
 
 export default function navbar() {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 sticky top-0 z-50">
   <div className="navbar-start">
     <Link className="btn btn-ghost text-xl hover:bg-white" href="/"><Image src={firstLogo} height={90} width={90} alt="CarsAI"></Image></Link>
   </div>

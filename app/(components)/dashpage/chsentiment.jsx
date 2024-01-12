@@ -1,29 +1,13 @@
 "use client"
 import { AreaChart, Card, Title } from "@tremor/react";
 
-export default function CharSentiment() { 
+export default function CharSentiment(props) {
   const chartdata = [
-    {
-      date: "Rec. 1",
-      Score: 0.4,
-    },
-    {
-      date: "Rec. 2",
-      Score: 0.2,
-    },
-    {
-      date: "Rec. 3",
-      Score: 0.78,
-    },
-    {
-      date: "Rec. 4",
-      Score: 0.88,
-    },
-    {
-      date: "Rec. 5",
-      Score: 0.55,
-    },
   ];
+  const dat = props.firstSentiment;
+  for(let i=0; i<dat.length; i++) {
+    chartdata.push( {rec: dat[i].recD, score: dat[i].scoreD} );
+  }
   
   const valueFormatter = function(number) {
     return new Intl.NumberFormat("us").format(number).toString();
@@ -37,8 +21,8 @@ export default function CharSentiment() {
       className="h-72 mt-4"
       data={chartdata}
       showAnimation
-      index="date"
-      categories={["Score"]}
+      index="rec"
+      categories={["score"]}
       colors={["red"]}
       valueFormatter={valueFormatter}
     />
