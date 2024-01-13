@@ -12,12 +12,15 @@ export default function Dash() {
     const mainData = [
     ]
 
+    const days = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+
     for(let i=0; i<100; i++) {
+        let callDate = days[Math.floor(Math.random() * days.length)]
         let randcaller = Math.floor(Math.random() * 100) + 1;
         let randclient = Math.floor(Math.random() * 100) + 1;
         let randscore = Math.random().toFixed(2);
 
-        mainData.push( {recD: `Rec ${i+1}`, callerD: randcaller, clientD: randclient, scoreD: randscore} );
+        mainData.push( {recD: `Rec ${i+1}`, callerD: randcaller, clientD: randclient, scoreD: randscore, dateD: callDate} );
     }
 
 
@@ -40,7 +43,7 @@ export default function Dash() {
 </div>
 
 <div className="flex justify-center items-center gap-5 col-span-4 shadow-xl ml-2 mb-2 mr-2 mt-4 rounded-xl">
-<VolBar />
+<VolBar monthData={mainData}/>
 <StatusComp />
 </div>
 

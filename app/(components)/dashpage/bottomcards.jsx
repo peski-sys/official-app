@@ -57,7 +57,7 @@ export default function FourCards(props) {
       <span className=" font-bold text-5xl text-red-600">-0.2% </span>
     </figure>
     <div className="card-body items-center text-center">
-      <h2 className="card-title">Sentiment <br />Progression</h2>
+      <h2 className="card-title">Sentiment <br />Progression (m)</h2>
     </div>
   </div>
 </>  
