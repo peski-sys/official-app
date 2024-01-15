@@ -20,7 +20,7 @@ export default function Dash() {
         let randclient = Math.floor(Math.random() * 100) + 1;
         let randscore = Math.random().toFixed(2);
 
-        mainData.push( {recD: `Rec ${i+1}`, callerD: randcaller, clientD: randclient, scoreD: randscore, dateD: callDate} );
+        mainData.push( {recD: `Rec.${i+1}`, callerD: randcaller, clientD: randclient, scoreD: randscore, dateD: callDate} );
     }
 
 
