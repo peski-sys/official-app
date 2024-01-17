@@ -6,7 +6,8 @@ export default function CharSentiment(props) {
     const { payload, active } = props;
     if (!active || !payload) return null;
     return (
-      <div className="w-56 rounded-lg text-tremor-default bg-tremor-background p-2 shadow-xl border border-tremor-border">
+      <div className="w-56 rounded-lg text-tremor-default bg-tremor-background p-2 shadow-xl border border-tremor-border bg-opacity-60">
+        {payload[0].payload.rec} <hr className="m-2" />
         {payload.map((category, idx) => (
           <div key={idx} className="flex flex-1 space-x-2.5">
             <div
@@ -41,6 +42,7 @@ export default function CharSentiment(props) {
   <Title>Sentiment Score of Client per Recording (1 being Highest)</Title>
   <AreaChart
       className="h-72 mt-4"
+      curveType="monotone"
       data={chartdata}
       showAnimation
       index="rec"
@@ -48,6 +50,7 @@ export default function CharSentiment(props) {
       colors={["red"]}
       valueFormatter={valueFormatter}
       customTooltip={customTooltip}
+      showXAxis={false}
     />
   </Card>
   </>
