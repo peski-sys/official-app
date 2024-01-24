@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <head>
       <link rel="icon" href="/images/dashicon.ico" sizes="any" />
       </head>
-      <body className={pop.className}>
+      <body className={pop.className}>  
         {children}
         </body>
     </html>
