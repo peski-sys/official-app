@@ -1,13 +1,15 @@
-"use client"
+// "use client"
 import CardsBottom from "@/app/(components)/dashpage/bottomcards";
 import CarouselTwo from "@/app/(components)/dashpage/twocarousel";
 import VolBar from "@/app/(components)/dashpage/volchart";
 import StatusComp from "@/app/(components)/dashpage/statdash";
 import TopTopics from "@/app/(components)/dashpage/toptopics";
+import { currentUser } from "@clerk/nextjs";
 
 
-export default function Dash() {
+export default async function Dash() {
 
+    const user = await currentUser()
 
     const mainData = [
     ]
@@ -31,7 +33,7 @@ export default function Dash() {
           {/* Heading Start */}
             <div className="py-6">
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 md:px-8">
-                    <h1 className=" text-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 font-bold text-yellow-100 text-center mb-5 rounded-xl p-2">Overall Stats</h1>
+                    <h1 className=" text-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 font-bold text-yellow-100 text-center mb-5 rounded-xl p-2">Overall Status</h1>
                 </div>
             </div>
             {/* Heading End */}
