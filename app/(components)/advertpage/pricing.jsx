@@ -10,7 +10,7 @@ export default function pricing() {
           <strong className="mb-1 text-xs font-semibold tracking-widest text-blue-500 uppercase"> Straight Pricing. No added costs </strong>
           <span className="mb-8 text-2xl font-bold text-neutral-600 tracking-relaxed lg:text-5xl"> Pricing </span>
           <p className="mx-auto mb-4 text-xl font-light text-gray-500 text-opacity-70 lg:pr-10">Schedule a call with us to get a demo</p>
-          <p className="mx-auto mb-2 text-xl font-light text-gray-500 text-opacity-70 lg:pr-10">Or Purchase our plan fixed for everyone. No Confusions. No added cost.</p>
+          <p className="mx-auto mb-2 text-xl font-light text-gray-500 text-opacity-70 lg:pr-10">or Purchase our plan, fixed for everyone.</p>
         </div>
       </div>
       <div className="w-full xl:w-1/4 md:w-2/6">
